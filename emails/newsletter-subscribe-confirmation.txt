@@ -1,0 +1,14 @@
+Confirm Newsletter Subscription
+
+Thanks for your interest in staying informed about Openly Operated. Click the link below to confirm subscribing to the newsletter.
+{{confirmUrl}}
+
+If you have any questions, you can reply directly to this email.
+
+Thank you,
+The Openly Operated Team
+
+-- 
+
+If this was a mistake, click below to unsubscribe from all future emails.
+{{doNotEmailUrl}}

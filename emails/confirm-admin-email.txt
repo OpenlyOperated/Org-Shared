@@ -1,0 +1,7 @@
+Hello,
+
+Click this link to complete your OO Admin signup:
+{{ confirmemailurl }}
+
+Thanks,
+Openly Operated
