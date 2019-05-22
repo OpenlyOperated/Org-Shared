@@ -217,7 +217,7 @@ class Post {
           ON (posts.id = tags.post_id)
             ${tagTitle ? ' AND tags.title = $1' : '' }
         GROUP BY posts.id
-        ORDER BY posts.update_date DESC NULLS LAST, posts.create_date DESC`,
+        ORDER BY posts.create_date ASC`,
       tagTitle ? [tagTitle] : [])
     .catch( error => {
       throw new AppError(500, 14, "Error listing posts", error);
