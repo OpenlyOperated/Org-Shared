@@ -209,7 +209,7 @@ class Post {
     })
   }
   
-  static list(tagTitle = null, includeUnpublished = false) {
+  static list(tagTitle = null, includeUnpublished = false, sortAscending = true) {
     return Database.query(
       `SELECT posts.*, array_agg(tags.title) as tag_titles, array_agg(tags.id) as tag_ids
         FROM tags
@@ -217,7 +217,7 @@ class Post {
           ON (posts.id = tags.post_id)
             ${tagTitle ? ' AND tags.title = $1' : '' }
         GROUP BY posts.id
-        ORDER BY posts.create_date ASC`,
+        ORDER BY posts.create_date ${sortAscending ? 'ASC' : 'DESC' }`,
       tagTitle ? [tagTitle] : [])
     .catch( error => {
       throw new AppError(500, 14, "Error listing posts", error);
