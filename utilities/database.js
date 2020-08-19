@@ -19,6 +19,7 @@ const pool = new Pool({
   min: 4,
   idleTimeoutMillis: 1000,
   connectionTimeoutMillis: 10000,
+  rejectUnauthorized: false
 });
 
 pool.on('error', (error, c) => {
