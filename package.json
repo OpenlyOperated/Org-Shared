@@ -17,7 +17,7 @@
   "homepage": "https://openlyoperated.org",
   "dependencies": {
     "aws-param-env": "^1.2.0",
-    "aws-sdk": "^2.438.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^5.0.0",
     "express-brute": "^1.0.1",
     "express-brute-pg": "^2.0.0",
