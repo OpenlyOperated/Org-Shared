@@ -18,16 +18,15 @@
   "dependencies": {
     "aws-param-env": "^1.2.0",
     "aws-sdk": "^2.438.0",
-    "bcrypt": "5.0.0",
-    "express-validator": "^5.3.1",
+    "bcrypt": "^5.0.0",
+    "express-validator": "^6.0.0",
     "fs-extra": "^7.0.1",
     "handlebars": "^4.7.7",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^2.3.2",
     "markdown-it-container": "^2.0.0",
     "moment": "^2.24.0",
-    "pg": "^7.10.0",
+    "pg": "^8.0.0",
     "winston": "^3.2.1"
-  },
-  "devDependencies": {}
+  }
 }
