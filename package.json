@@ -22,7 +22,7 @@
     "express-validator": "^6.0.0",
     "fs-extra": "^7.0.1",
     "handlebars": "^4.7.7",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "9.0.0",
     "markdown-it-attrs": "^2.3.2",
     "markdown-it-container": "^2.0.0",
     "moment": "^2.24.0",
